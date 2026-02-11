@@ -1,0 +1,32 @@
+/*  
+    margin - space between border of the box and other box(es)
+    border - space between padding and margin    
+    padding - space between border and content of the same box
+    content
+*/
+
+* { /* applies styles to all elements */
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+.box-one {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 20px solid purple;
+    margin: 60px;
+    
+}
+.box-two {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 20px solid green;
+    margin: 60px; /* top and bottom margin 60+60 but it's not 120 because of Margin Collapse
+                  /* margin doesn't count into the height of the element*/
+    box-sizing: border-box; /* normally it would be 100 from content + 20 from padding + 40 from border 
+                            box-sizing: border-box forces an element's total width and height to include its content, padding, and border */
+} 
