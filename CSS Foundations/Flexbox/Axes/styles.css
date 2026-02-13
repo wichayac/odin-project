@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container div {
+    background-color: pink;
+    border: 5px solid coral;
+    height: 80px;
+    flex: 1 1 auto;
+}
+
+/* 
+flex: 1(1 1 0) in a column, 0 as the basis, we're telling the browser to ignore the height
+using flex: auto(1 1 auto), the browser looks at height: 80px and it gives each item 80px as a base height
+but in a row, whether they start at 0 or auto they're gonna grow to fill the width
+in a column, containers do not have a default height
+*/
