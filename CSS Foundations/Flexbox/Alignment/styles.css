@@ -1,0 +1,19 @@
+.container { /* flex-direction: row is default here*/
+  height: 140px;
+  width: 500px;
+  padding: 16px;
+  background: plum;
+  border: 4px solid indigo; 
+  display: flex;
+  justify-content: center; /* justify-content controls the main axis(horizontal in this case)*/
+  align-items: center; /* align-items controls the cross axis(vertical in this case) */
+  gap: 10px; /* gap adds space between flex items(.item in this case), like adding a margin to the items*/
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+}
+
