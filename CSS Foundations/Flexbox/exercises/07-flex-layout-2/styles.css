@@ -1,0 +1,92 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header {
+    height: 72px;
+    background: darkmagenta;
+    color: white;
+}
+
+.footer {
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
+}
+
+.sidebar {
+    width: 300px;
+    background: royalblue;
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
+    border-radius: 4px;
+}
+
+/* done */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    display: flex;
+    flex: 1;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* allow its child items to flow onto multiple lines when they run out of space in the primary axis, rather than being forced into a single line*/
+    padding: 48px;
+    gap: 32px;
+}
+
+.card {
+    width: 320px;
+    padding: 16px;
+}
+
+.sidebar {
+    flex-shrink: 0;
+    padding: 16px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* make list in side bar close to left and top*/
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin-bottom: 16px;
+    /* space between items in sidebar's list*/
+}
